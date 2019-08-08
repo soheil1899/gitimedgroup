@@ -1,0 +1,251 @@
+
+// Fonts
+
+// Variables
+@import 'variables';
+@import "fonts";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~hooper/dist/hooper.css';
+
+.header-top{
+  width: 100%; height: auto; background-color: #068FBD; padding-top: 60px; padding-bottom: 60px;
+}
+.header-bottom{
+  width: 100%; height: auto; background-color: #1B789B;
+}
+
+.carousel-inner{
+    border: 5px solid #00324c;
+}
+.dropdown-toggle::after{
+display: none !important;
+}
+
+.nav-link{
+    font-family: YEKAN !important;
+}
+.dropdown-item{
+    font-family: YEKAN !important;
+}
+
+.logo-image{
+    border-right: 5px solid #2D83B0;
+    border-left: 5px solid #2D83B0;
+}
+
+.bg-shodow{
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
+  box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
+
+}
+.websitename{
+  color: #EB5663;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+}
+html *{ font-family: IRANSans;}
+.width100{ width: 100%;
+
+}
+.documentsshow{
+  background-color: #fff; border: solid 1px #eee; padding: 25px;
+  border-radius: 25px;
+
+}section .section-title {
+   text-align: center;
+   color: #007b5e;
+   margin-bottom: 50px;
+   text-transform: uppercase;
+ }
+
+
+ .bignav{
+     width: fit-content !important;
+     top: -46px !important;
+     background-color: #2D83B0 !important;
+     text-align: right !important;
+ }
+
+ .bignav a:hover{
+     background-color: #369ed4;
+ }
+ .minnav{
+     background-color: transparent;
+     text-align: right;
+ }
+.minnav a{
+     color: #3490DC;
+ }
+ .minnav a:hover{
+     background-color: #b0bfd4;
+ }
+
+ .call-info{
+     border-bottom: 1px solid #fff;
+ }
+
+ .call-info strong, .call-info label{
+     font-family: YEKAN !important;
+ }
+ .footer-top i{
+     color: #fff;
+ }
+
+
+body{
+    background-color: #BDCCD4;
+}
+header{
+    position: relative;
+}
+header .st0{
+    fill: #0AAFE8;
+}
+header .st1{
+    fill: #2183B0;
+}
+.header-title{
+    position: absolute;
+    top:50px;
+    right: 50px;
+    direction: rtl;
+    color: #fff;
+    text-align: right;
+}
+.header-title-en{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    direction: ltr;
+    color: #fff;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #068FBD;
+    height: 230px;
+}
+#carouselExampleFade{
+  margin-bottom: 100px;
+}
+.carousel-indicators{
+  bottom: -60px;
+}
+.footer-top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    direction: ltr;
+    color: #fff;
+    background-color: #1B789B;
+    padding: 3px 75px;
+}
+footer .bottem{
+    text-align: right;
+    direction: rtl;
+    padding: 100px 40px 0 0;
+    color: #fff;
+}
+aside{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    height: 100%;
+}
+.my-content{
+  border-left: 1px solid #fff;
+}
+.aside-menu{
+    text-align: right;
+    list-style: none;
+    padding: 0 10px ;
+}
+.aside-menu li{
+    height: 40px;
+    margin: 3px 0;
+    background-color: #2183B0;
+}
+
+.aside-menu li a{
+    color: #fff !important;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 3px;
+    display: block;
+}
+aside .call-info{
+    text-align: right;
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+    color: #175d7d;
+}
+.call-info h4 strong{
+    padding: 30px 30px;
+    color: #175d7d;
+    display: block;
+}
+#carouselExampleFade{
+    height: 450px;
+}
+#carouselExampleFade .d-block{
+    height: 450px;
+}
+.prev-button{
+    margin: 0 auto 0 10px;
+}
+.next-button{
+    margin: 0 10px 0 auto;
+}
+.carousel-indicators li{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.title-index{
+    direction: rtl;
+    text-align: right;
+    background-color: #2D83B0;
+    width: 200px;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 40px;
+}
+.text-index{
+    direction: rtl;
+    text-align: justify;
+    padding: 20px 55px;
+    border-top: 4px solid #2D83B0;
+    color: #333;
+    font-size: 17px;
+}
+
+
+.gallery img{
+    border-radius: 3px; border: 2px solid #fff;
+}
+.getmanager .mb-3{
+    text-align: center;
+}
+.managers{
+    height: fit-content; background-color: #E6E6E6;
+}
+
+.dropdown-menu{
+    top: 0 !important;
+    right: 200px;
+}
+.navbar-toggler{
+    border: 2px solid #555;
+}
+
+
