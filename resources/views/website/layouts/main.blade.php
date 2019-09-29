@@ -31,7 +31,7 @@
 </head>
 <body>
 
-<div class="container my-4">
+<div>
 
 @include('website.layouts.header')
 

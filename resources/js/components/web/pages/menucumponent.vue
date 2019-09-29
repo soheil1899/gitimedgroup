@@ -1,5 +1,5 @@
 <template>
-<div dir="rtl" class="text-right">
+<div dir="rtl" class="text-right px-2">
 
 
 
@@ -15,7 +15,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                        aria-haspopup="true"
                        aria-expanded="false">{{item['name']}}
-                        <i class="fas fa-chevron-circle-left"></i>
+                        <i class="fas fa-chevron-circle-left float-left m-2"></i>
                     </a>
                     <div class="dropdown-menu bignav position-absolute">
 

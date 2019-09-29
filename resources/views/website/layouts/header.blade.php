@@ -23,10 +23,11 @@
 {{--    </div>--}}
 
 
-    <div class="header-top px-4">
+    <div class="header-top">
+        <img src="/media/user/12.jpg" alt="" class="header-img">
 
     </div>
-    <div class="header-bottom py-3">
+    <div class="header-bottom py-1">
 
     </div>
 
@@ -35,7 +36,7 @@
 
     <div class="row">
     <div class="header-title col-12 d-none d-sm-block">
-        <h2>
+        <h2 class="mr-5 badcolor">
             <strong>
 {{$setting['websitename']}}
             </strong>

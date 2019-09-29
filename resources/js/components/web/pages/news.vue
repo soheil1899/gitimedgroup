@@ -6,13 +6,19 @@
 
         <div class="row px-3">
 
-                <div v-for="item in news['to_article']" :key="item.id" class="col-6 col-md-4 col-lg-3 border managers py-2" >
-                    <a :href="'/article/news/'+item.url">
-                    <img src="/media/temp/logos.png" width="100%" height="100%">
+                <div v-for="item in news['to_article']" :key="item.id" class="col-6 col-md-4 col-lg-3 p-3 py-2" >
+                    <div class="managers border">
+                    <a :href="'/article/news/'+item.url" class="mylink">
+                    <div class="p-4">
+                    <img src="/media/temp/logos.png" class="onenews">
+                    </div>
+                    <div class="px-3 pb-3">
                     <h5>
                         <strong class="mt-3 d-block">{{item['name']}}</strong>
                     </h5>
+                    </div>
                     </a>
+                    </div>
                 </div>
 
 
@@ -54,5 +60,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

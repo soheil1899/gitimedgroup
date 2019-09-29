@@ -2,8 +2,21 @@
 
     <div class="gallery text-center" dir="ltr">
 
-        <img class="image m-2" v-for="(image, i) in images" :src="image" @click="onClick(i)" width="240px" height="140px">
-        <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow>
+        <div class="row mx-0 my-5 px-5">
+            <div class="col-6 col-lg-3 pb-2" v-for="thumb in images"
+                 :key="thumb.id"
+                 @click="showLightbox(thumb.name)">
+                <img class="slider-image" :src="thumb.name"/>
+            </div>
+        </div>
+        <lightbox id="mylightbox"
+                  ref="lightbox"
+                  :images="images"
+                  :timeoutDuration="5000"
+        ></lightbox>
+
+<!--        <img class="image m-2" v-for="(image, i) in images" :src="image" @click="onClick(i)" width="240px" height="140px">-->
+<!--        <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow>-->
 
     </div>
 
@@ -12,7 +25,8 @@
 
 <script>
 
-    import VueGallerySlideshow from 'vue-gallery-slideshow';
+    // import VueGallerySlideshow from 'vue-gallery-slideshow';
+    import Lightbox from 'vue-my-photos';
 
     export default {
         name: "gallery",
@@ -33,31 +47,34 @@
             }
         },
         components: {
-            VueGallerySlideshow
+            // VueGallerySlideshow
+            'lightbox': Lightbox
         },
         methods: {
-            loadfirtspage() {
-                let that = this;
-                axios.post('/getgallery')
-                    .then(function (response) {
-                        for (var i=0; i<response.data.length; i++){
-                            that.images.push(response.data[i]['picture']);
-                        }
-                    });
-
-
-            },
-            onClick(i) {
-                this.index = i;
+            showLightbox: function (imageName) {
+                this.$refs.lightbox.show(imageName);
             },
         },
         mounted: function () {
-            this.loadfirtspage();
-
+            let that = this;
+            axios.post('/getgallery')
+                .then(function (response) {
+                    for (var i=0; i<response.data.length; i++){
+                        var newarr = [];
+                        newarr['id'] = i+1;
+                        newarr['name'] = response.data[i]['picture'];
+                        that.images.push(newarr);
+                    }
+                });
         }
 
     }
 </script>
 
 <style scoped>
+    .slider-image {
+        border: 2px solid #f1734b;
+        width: 100%;
+        height: 100%;
+    }
 </style>

@@ -47,7 +47,6 @@
                 axios.post('/getaboutus')
                     .then(function (response) {
                         that.aboutus = response.data['to_content'];
-                        console.log(that.aboutus);
                     });
 
 

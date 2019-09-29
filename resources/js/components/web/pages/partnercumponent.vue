@@ -37,7 +37,6 @@
                 axios.post('/getpartners')
                     .then(function (response) {
                         that.partners = response.data;
-                        console.log(that.partners[0]['to_content'][0]['title']);
                     });
                 },
         },

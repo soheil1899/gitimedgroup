@@ -13,14 +13,27 @@
 @import '~hooper/dist/hooper.css';
 
 .header-top{
-  width: 100%; height: auto; background-color: #068FBD; padding-top: 60px; padding-bottom: 60px;
+  width: 100%; height: 130px;
+}
+.header-img{
+    height: 100%;
+    width: 100%;
 }
 .header-bottom{
-  width: 100%; height: auto; background-color: #1B789B;
+  width: 100%; height: auto; background-color: #fff;
 }
-
-.carousel-inner{
-    border: 5px solid #00324c;
+.badcolor{
+    color: #5d0130;
+}
+.mylink{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.onenews{
+    border: 1px solid #555;
+    width: 100%;
+    height: 170px;
 }
 .dropdown-toggle::after{
 display: none !important;
@@ -34,8 +47,8 @@ display: none !important;
 }
 
 .logo-image{
-    border-right: 5px solid #2D83B0;
-    border-left: 5px solid #2D83B0;
+    border-right: 5px solid #78013e;
+    border-left: 5px solid #78013e;
 }
 
 .bg-shodow{
@@ -70,27 +83,24 @@ html *{ font-family: IRANSans;}
  .bignav{
      width: fit-content !important;
      top: -46px !important;
-     background-color: #2D83B0 !important;
+     background-color: #78013e !important;
      text-align: right !important;
  }
 
  .bignav a:hover{
-     background-color: #369ed4;
+     background-color: #78013e;
  }
  .minnav{
      background-color: transparent;
      text-align: right;
  }
 .minnav a{
-     color: #3490DC;
+     color: #78013e;
  }
  .minnav a:hover{
      background-color: #b0bfd4;
  }
 
- .call-info{
-     border-bottom: 1px solid #fff;
- }
 
  .call-info strong, .call-info label{
      font-family: YEKAN !important;
@@ -107,10 +117,10 @@ header{
     position: relative;
 }
 header .st0{
-    fill: #0AAFE8;
+    fill: #78013e;
 }
 header .st1{
-    fill: #2183B0;
+    fill: #78013e;
 }
 .header-title{
     position: absolute;
@@ -130,8 +140,8 @@ header .st1{
 footer{
     position: relative;
     width: 100%;
-    background-color: #068FBD;
-    height: 230px;
+    background-color: #78013e;
+    height: 160px;
 }
 #carouselExampleFade{
   margin-bottom: 100px;
@@ -147,13 +157,13 @@ footer{
     height: 35px;
     direction: ltr;
     color: #fff;
-    background-color: #1B789B;
+    background-color: #5d0130;
     padding: 3px 75px;
 }
 footer .bottem{
     text-align: right;
     direction: rtl;
-    padding: 100px 40px 0 0;
+    padding: 60px 40px 0 0;
     color: #fff;
 }
 aside{
@@ -172,7 +182,7 @@ aside{
 .aside-menu li{
     height: 40px;
     margin: 3px 0;
-    background-color: #2183B0;
+    background-color: #78013e;
 }
 
 .aside-menu li a{
@@ -184,13 +194,12 @@ aside{
 }
 aside .call-info{
     text-align: right;
-    margin-top: 30px;
     border-top: 1px solid #fff;
-    color: #175d7d;
+    color: #78013e;
 }
 .call-info h4 strong{
     padding: 30px 30px;
-    color: #175d7d;
+    color: #78013e;
     display: block;
 }
 #carouselExampleFade{
@@ -213,7 +222,7 @@ aside .call-info{
 .title-index{
     direction: rtl;
     text-align: right;
-    background-color: #2D83B0;
+    background-color: #78013e;
     width: 200px;
     color: #fff;
     font-size: 20px;
@@ -223,9 +232,9 @@ aside .call-info{
 .text-index{
     direction: rtl;
     text-align: justify;
-    padding: 20px 55px;
-    border-top: 4px solid #2D83B0;
-    color: #333;
+    padding: 20px 5px;
+    border-top: 4px solid #78013e;
+    color: #78013e;
     font-size: 17px;
 }
 
@@ -237,7 +246,8 @@ aside .call-info{
     text-align: center;
 }
 .managers{
-    height: fit-content; background-color: #E6E6E6;
+    height: fit-content;
+    background-color: #E6E6E6;
 }
 
 .dropdown-menu{
@@ -247,5 +257,16 @@ aside .call-info{
 .navbar-toggler{
     border: 2px solid #555;
 }
+.mylink{
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
 
+    .onenews{
+        border: 1px solid #555;
+    }
 
+a{
+    color: #78013e !important;
+}
