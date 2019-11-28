@@ -15,6 +15,7 @@ Vue.component('firstpage', require('./components/web/pages/firstpage').default);
 Vue.component('menucumponent', require('./components/web/pages/menucumponent').default);
 Vue.component('partner-component', require('./components/web/pages/partnercumponent').default);
 Vue.component('gallery', require('./components/web/pages/gallery').default);
+Vue.component('showarticle', require('./components/web/pages/ShowArticle').default);
 Vue.component('aboutus', require('./components/web/pages/aboutus').default);
 Vue.component('news', require('./components/web/pages/news').default);
 Vue.component('getnews', require('./components/web/pages/getnews').default);

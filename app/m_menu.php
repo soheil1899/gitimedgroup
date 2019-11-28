@@ -22,4 +22,5 @@ class m_menu extends  Model
     function toParentMenu(){
         return $this->hasMany('App\m_menu','parent','id');
     }
+
 }

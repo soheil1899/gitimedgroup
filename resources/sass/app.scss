@@ -1,6 +1,4 @@
-
 // Fonts
-
 // Variables
 @import 'variables';
 @import "fonts";
@@ -12,146 +10,195 @@
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~hooper/dist/hooper.css';
 
-.header-top{
-  width: 100%; height: 130px;
+//::-webkit-scrollbar {
+//    width: 9px
+//}
+//
+//::-webkit-scrollbar-track {
+//    background: #bbdadd;
+//    border-radius: 5px
+//}
+//
+//::-webkit-scrollbar-thumb {
+//    background: #78013e;
+//    border-radius: 5px
+//}
+
+.header-top {
+    width: 100%;
+    height: 160px;
 }
-.header-img{
+
+.header-img {
     height: 100%;
     width: 100%;
 }
-.header-bottom{
-  width: 100%; height: auto; background-color: #fff;
+
+.header-bottom {
+    width: 100%;
+    height: auto;
+    background-color: #9abfdd;
 }
-.badcolor{
-    color: #5d0130;
+
+.badcolor {
+    color: #5a012f;
+    font-size: 2rem;
 }
-.mylink{
+
+.mylink {
     width: 100%;
     height: 100%;
     display: block;
 }
-.onenews{
+
+.onenews {
     border: 1px solid #555;
     width: 100%;
     height: 170px;
 }
-.dropdown-toggle::after{
-display: none !important;
+
+.dropdown-toggle::after {
+    display: none !important;
 }
 
-.nav-link{
-    font-family: YEKAN !important;
-}
-.dropdown-item{
-    font-family: YEKAN !important;
-}
+//.nav-link {
+//    font-family: YEKAN !important;
+//}
+//
+//.dropdown-item {
+//    font-family: YEKAN !important;
+//}
 
-.logo-image{
+.logo-image {
     border-right: 5px solid #78013e;
     border-left: 5px solid #78013e;
 }
 
-.bg-shodow{
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
-  box-shadow: 0px 0px 16px 0px rgba(158,158,158,1);
+.bg-shodow {
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(158, 158, 158, 1);
+    box-shadow: 0px 0px 16px 0px rgba(158, 158, 158, 1);
 
 }
-.websitename{
-  color: #EB5663;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10px;
-  text-align: right;
+
+.websitename {
+    color: #EB5663;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
 }
-html *{ font-family: IRANSans;}
-.width100{ width: 100%;
+
+html * {
+    font-family: IRANSans;
+}
+
+.width100 {
+    width: 100%;
 
 }
-.documentsshow{
-  background-color: #fff; border: solid 1px #eee; padding: 25px;
-  border-radius: 25px;
 
-}section .section-title {
-   text-align: center;
-   color: #007b5e;
-   margin-bottom: 50px;
-   text-transform: uppercase;
- }
+.documentsshow {
+    background-color: #fff;
+    border: solid 1px #eee;
+    padding: 25px;
+    border-radius: 25px;
 
-
- .bignav{
-     width: fit-content !important;
-     top: -46px !important;
-     background-color: #78013e !important;
-     text-align: right !important;
- }
-
- .bignav a:hover{
-     background-color: #78013e;
- }
- .minnav{
-     background-color: transparent;
-     text-align: right;
- }
-.minnav a{
-     color: #78013e;
- }
- .minnav a:hover{
-     background-color: #b0bfd4;
- }
-
-
- .call-info strong, .call-info label{
-     font-family: YEKAN !important;
- }
- .footer-top i{
-     color: #fff;
- }
-
-
-body{
-    background-color: #BDCCD4;
 }
-header{
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+.bignav {
+    width: fit-content !important;
+    top: -46px !important;
+    background-color: #78013e !important;
+    text-align: right !important;
+}
+
+.bignav a:hover {
+    background-color: #78013e;
+}
+
+.minnav {
+    background-color: transparent;
+    text-align: right;
+}
+
+.minnav a {
+    color: #78013e;
+}
+
+.minnav a:hover {
+    background-color: #b0bfd4;
+}
+
+
+.call-info strong, .call-info label {
+    font-family: YEKAN !important;
+}
+
+.footer-top i {
+    color: #fff;
+}
+
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
     position: relative;
 }
-header .st0{
+
+header .st0 {
     fill: #78013e;
 }
-header .st1{
+
+header .st1 {
     fill: #78013e;
 }
-.header-title{
+
+.header-title {
     position: absolute;
-    top:50px;
+    top: 50px;
     right: 50px;
     direction: rtl;
     color: #fff;
     text-align: right;
 }
-.header-title-en{
+
+.header-title-en {
     position: absolute;
-    top:50px;
+    top: 50px;
     left: 50px;
     direction: ltr;
     color: #fff;
 }
-footer{
+
+footer {
     position: relative;
     width: 100%;
     background-color: #78013e;
     height: 160px;
 }
-#carouselExampleFade{
-  margin-bottom: 100px;
+
+#carouselExampleFade {
+    margin-bottom: 100px;
 }
-.carousel-indicators{
-  bottom: -60px;
+
+.carousel-indicators {
+    bottom: -60px;
 }
-.footer-top{
+
+.footer-top {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 35px;
@@ -160,66 +207,79 @@ footer{
     background-color: #5d0130;
     padding: 3px 75px;
 }
-footer .bottem{
+
+footer .bottem {
     text-align: right;
     direction: rtl;
     padding: 60px 40px 0 0;
     color: #fff;
 }
-aside{
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+
+aside {
+    border-left: 1px solid #a7a7a7;
+    border-right: 1px solid #a7a7a7;
     height: 100%;
 }
-.my-content{
-  border-left: 1px solid #fff;
+
+.my-content {
+    border-left: 1px solid #a7a7a7;
 }
-.aside-menu{
+
+.aside-menu {
     text-align: right;
     list-style: none;
-    padding: 0 10px ;
+    padding: 0 10px;
 }
-.aside-menu li{
+
+.aside-menu li {
     height: 40px;
     margin: 3px 0;
     background-color: #78013e;
 }
 
-.aside-menu li a{
+.aside-menu li a {
     color: #fff !important;
     font-size: 20px;
     margin-right: 10px;
     padding-top: 3px;
     display: block;
 }
-aside .call-info{
+
+aside .call-info {
     text-align: right;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #a7a7a7;
     color: #78013e;
 }
-.call-info h4 strong{
+
+.call-info h4 strong {
     padding: 30px 30px;
     color: #78013e;
     display: block;
 }
-#carouselExampleFade{
+
+#carouselExampleFade {
     height: 450px;
 }
-#carouselExampleFade .d-block{
+
+#carouselExampleFade .d-block {
     height: 450px;
 }
-.prev-button{
+
+.prev-button {
     margin: 0 auto 0 10px;
 }
-.next-button{
+
+.next-button {
     margin: 0 10px 0 auto;
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     height: 15px;
     width: 15px;
     border-radius: 50%;
 }
-.title-index{
+
+.title-index {
     direction: rtl;
     text-align: right;
     background-color: #78013e;
@@ -229,7 +289,8 @@ aside .call-info{
     padding: 5px 20px;
     margin-top: 40px;
 }
-.text-index{
+
+.text-index {
     direction: rtl;
     text-align: justify;
     padding: 20px 5px;
@@ -239,34 +300,39 @@ aside .call-info{
 }
 
 
-.gallery img{
-    border-radius: 3px; border: 2px solid #fff;
+.gallery img {
+    border-radius: 3px;
+    border: 2px solid #fff;
 }
-.getmanager .mb-3{
+
+.getmanager .mb-3 {
     text-align: center;
 }
-.managers{
+
+.managers {
     height: fit-content;
     background-color: #E6E6E6;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     top: 0 !important;
     right: 200px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: 2px solid #555;
 }
-.mylink{
+
+.mylink {
     width: 100%;
     height: 100%;
     display: block;
-    }
+}
 
-    .onenews{
-        border: 1px solid #555;
-    }
+.onenews {
+    border: 1px solid #555;
+}
 
-a{
+a {
     color: #78013e !important;
 }

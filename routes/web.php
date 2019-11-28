@@ -11,19 +11,20 @@
 |
 */
 
-Route::get('/','Auth\OtherUserController@logout')->name('logout');
+//Route::get('/','Auth\OtherUserController@logout')->name('logout');
 
 Auth::routes();
 
 Route::prefix('/')->namespace('Website')->group(function () {
+    Route::get('articles/{articleurl}','PagesController@article')->name('article');
     Route::get('/','PagesController@homepage')->name('homepage');
     Route::post('menucomponent','PagesController@menucomponent')->name('menucomponent');
     Route::get('gallery','PagesController@gallery')->name('gallery');
-    Route::get('aboutus','PagesController@aboutus')->name('aboutus');
+//    Route::get('aboutus','PagesController@aboutus')->name('aboutus');
     Route::get('managers','PagesController@managers')->name('managers');
     Route::get('managers/{url}','PagesController@getmanager')->name('getmanager');
     Route::get('article/news','PagesController@news')->name('news');
-    Route::get('article/news/{url}','PagesController@getnews')->name('getnews');
+    Route::get('article/{group}/{url}','PagesController@getnews')->name('getnews');
     Route::any('/getlang','PagesController@getlang')->name('getlangs');
     Route::post('getaboutus','PagesController@getaboutus')->name('getaboutus');
     Route::post('getgallery','PagesController@getgallery')->name('getgallery');

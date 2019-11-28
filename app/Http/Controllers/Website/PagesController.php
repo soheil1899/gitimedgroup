@@ -46,7 +46,7 @@ class PagesController extends Controller
         $header->description=$setting->description;
         $header->image='/media/Layout/'.$setting->logo;
         $slider = sliders::where('parent', 1)->get();
-        $menu = m_menu::where('parent', 0)->with('toParentMenu')->get();
+        $menu = m_menu::where('parent', 0)->with('toParentMenu.toParentMenu')->get();
         $component = 'firstpage';
         $news = articlegroup::where('id', 2)->with('toArticle')->first();
 
@@ -56,7 +56,7 @@ class PagesController extends Controller
 
     public function menucomponent()
     {
-        $menu = m_menu::where('parent', 0)->with('toParentMenu')->get();
+        $menu = m_menu::where('parent', 0)->with('toParentMenu.toParentMenu')->get();
         return $menu;
     }
 
@@ -108,13 +108,12 @@ class PagesController extends Controller
         $header->keywords=$setting->keywords;
         $header->description=$setting->description;
         $header->image='/media/Layout/'.$setting->logo;
-        $news = articlegroup::where('id', 2)->with('toArticle')->first();
-
+        $news = articlegroup::where('url','news')->with('toArticle')->first();
         return view('website.pages.news', compact('header', 'news', 'setting'));
 
     }
 
-    public function getnews($url)
+    public function getnews($group,$url)
     {
         $setting=$this->getsetting();
         $header=(object) array();
@@ -126,6 +125,19 @@ class PagesController extends Controller
         $news = articles::where('url', $url)->with('toContent')->first();
 
         return view('website.pages.getnews', compact('header', 'news', 'setting'));
+
+    }
+    public function article($articleurl)
+    {
+        $setting=$this->getsetting();
+        $header=(object) array();
+        $header->title=$setting->websitename;
+        $header->keywords=$setting->keywords;
+        $header->description=$setting->description;
+        $header->image='/media/Layout/'.$setting->logo;
+
+        $articleshow = articles::where('url',$articleurl)->with('toContent')->first();
+        return view('website.pages.articleshow', compact('header', 'articleshow', 'setting'));
 
     }
     public function getgallery()

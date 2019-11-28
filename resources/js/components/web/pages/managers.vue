@@ -14,7 +14,7 @@
                     </div>
                     <div class="px-3 pb-3">
                     <h5>
-                        <strong class="mt-3 d-block">{{item['name']}}</strong>
+                        <strong class="mt-3 d-block text-center">{{item['name']}}</strong>
                     </h5>
                     </div>
                     </a>

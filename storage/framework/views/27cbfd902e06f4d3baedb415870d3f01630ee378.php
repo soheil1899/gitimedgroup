@@ -36,15 +36,16 @@
 
     <div class="row">
     <div class="header-title col-12 d-none d-sm-block">
-        <h2 class="mr-5 badcolor">
+        <h2 class="mr-5 mt-3 badcolor">
             <strong>
 <?php echo e($setting['websitename']); ?>
+
 
             </strong>
         </h2>
     </div>
     <div class="header-title col-12 d-block d-sm-none">
-        <h4>
+        <h4 class="badcolor mt-3">
             <strong>
 <?php echo e($setting['websitename']); ?>
 

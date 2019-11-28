@@ -41,7 +41,6 @@
         },
         mounted: function () {
 
-            console.log(this.aboutus['to_content'][0]);
         }
 
     }

@@ -97,16 +97,10 @@
 
 
 
-        <div class="title-index">
-            <strong>همکاران ما</strong>
-        </div>
-        <div class="text-index">
 
         <partner-component></partner-component>
 
 
-
-        </div>
 
 
 
